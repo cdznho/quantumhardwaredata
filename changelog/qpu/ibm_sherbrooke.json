@@ -1,0 +1,11 @@
+{
+  "qpu_id": "ibm_sherbrooke",
+  "changes": [
+    {
+      "version": "1.0.0",
+      "date": "2026-01-15",
+      "change_type": "initial_entry",
+      "description": "Initial community-curated entry created and published with synchronized HTML and JSON endpoints."
+    }
+  ]
+}

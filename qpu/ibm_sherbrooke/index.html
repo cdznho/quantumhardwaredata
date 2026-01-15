@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ibm_sherbrooke (Eagle R3) — QPU | QuantumHardwareData.org</title>
+  <link rel="canonical" href="https://quantumhardwaredata.org/qpu/ibm_sherbrooke" />
+  <meta name="description" content="Deterministic, versioned QPU reference entry for ibm_sherbrooke (Eagle R3)." />
+</head>
+<body>
+  <main>
+    <h1>ibm_sherbrooke (Eagle R3)</h1>
+
+    <section>
+      <h2>Identity</h2>
+      <ul>
+        <li><strong>QPU ID:</strong> ibm_sherbrooke</li>
+        <li><strong>Vendor:</strong> IBM Quantum</li>
+        <li><strong>Architecture:</strong> Superconducting (transmon)</li>
+        <li><strong>Verification status:</strong> community_curated</li>
+        <li><strong>Schema version:</strong> 1.0</li>
+        <li><strong>Object version:</strong> 1.0.0</li>
+        <li><strong>Last updated:</strong> 2026-01-15</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Summary</h2>
+      <p>
+        ibm_sherbrooke is a 127-qubit superconducting quantum processor based on transmon qubits and a heavy-hex lattice topology.
+        This entry is intended as a deterministic, versioned hardware reference. For machine-readable data, use the JSON endpoint.
+      </p>
+    </section>
+
+    <section>
+      <h2>Hardware specifications</h2>
+      <table border="1" cellspacing="0" cellpadding="6">
+        <tbody>
+          <tr><th align="left">Qubit count</th><td>127</td></tr>
+          <tr><th align="left">Qubit technology</th><td>Superconducting transmon</td></tr>
+          <tr><th align="left">Topology</th><td>Heavy-hex lattice</td></tr>
+          <tr><th align="left">Max connectivity degree</th><td>3</td></tr>
+          <tr><th align="left">Operating environment</th><td>Cryogenic</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Gate set</h2>
+      <h3>Single-qubit gates</h3>
+      <ul>
+        <li>rz</li>
+        <li>sx</li>
+        <li>x</li>
+      </ul>
+
+      <h3>Two-qubit gates</h3>
+      <ul>
+        <li>ecr</li>
+      </ul>
+
+      <p><em>Error rates:</em> Not publicly reported in this entry unless explicitly listed under Benchmarks or Metrics.</p>
+    </section>
+
+    <section>
+      <h2>Performance metrics</h2>
+
+      <h3>Coherence</h3>
+      <ul>
+        <li>T1 (median): Not publicly reported</li>
+        <li>T2 (median): Not publicly reported</li>
+      </ul>
+
+      <h3>Readout</h3>
+      <ul>
+        <li>Median fidelity: Not publicly reported</li>
+        <li>Latency: Not publicly reported</li>
+      </ul>
+
+      <h3>Benchmarks</h3>
+      <ul>
+        <li><strong>CLOPS:</strong> 904 (measurement date: 2022-12-21)</li>
+        <li><strong>Median two-qubit error (reported):</strong> ~0.66% (measurement date: 2022-12-21)</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Limitations</h2>
+      <ul>
+        <li>Topology-constrained connectivity consistent with heavy-hex lattice (primarily degree 2–3).</li>
+        <li>Performance metrics are time- and calibration-dependent; cite measurement dates with any use.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Provenance & trust</h2>
+      <ul>
+        <li><strong>Verification status:</strong> community_curated</li>
+        <li><strong>Data source:</strong> conference_disclosure (example; replace with your chosen source type)</li>
+        <li><strong>Reference:</strong> ADD_CANONICAL_PUBLIC_REFERENCE_HERE</li>
+        <li><strong>Conflict of interest:</strong> none</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Machine-readable endpoint</h2>
+      <p>
+        JSON: <a href="/qpu/ibm_sherbrooke.json">/qpu/ibm_sherbrooke.json</a>
+      </p>
+    </section>
+
+    <section>
+      <h2>Citation</h2>
+      <pre>
+QuantumHardwareData.org.
+"ibm_sherbrooke (Eagle R3)".
+Version 1.0.0.
+Retrieved 2026-01-15.
+https://quantumhardwaredata.org/qpu/ibm_sherbrooke
+      </pre>
+    </section>
+  </main>
+</body>
+</html>

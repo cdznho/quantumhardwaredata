@@ -1,0 +1,111 @@
+{
+  "object_type": "qpu",
+  "schema_version": "1.0",
+  "object_version": "1.0.0",
+  "retrieval_metadata": {
+    "canonical_url": "https://quantumhardwaredata.org/qpu/ibm_sherbrooke.json",
+    "license": "CC-BY-4.0",
+    "citation_required": true
+  },
+  "qpu": {
+    "entity_type": "qpu",
+    "schema_version": "1.0",
+    "identity": {
+      "qpu_id": "ibm_sherbrooke",
+      "qpu_name": "ibm_sherbrooke (Eagle R3)",
+      "vendor_name": "IBM Quantum",
+      "verification_status": "community_curated"
+    },
+    "architecture": {
+      "type": "superconducting",
+      "description": "Transmon superconducting qubit architecture; Eagle-family processor revision R3."
+    },
+    "qubits": {
+      "count": 127,
+      "technology": "Superconducting transmon qubits",
+      "layout_topology": "heavy-hex lattice",
+      "max_connectivity_degree": 3
+    },
+    "native_gates": [
+      {
+        "gate_name": "rz",
+        "arity": 1,
+        "median_error_rate": null,
+        "measurement_date": null,
+        "measurement_method": null
+      },
+      {
+        "gate_name": "sx",
+        "arity": 1,
+        "median_error_rate": null,
+        "measurement_date": null,
+        "measurement_method": null
+      },
+      {
+        "gate_name": "x",
+        "arity": 1,
+        "median_error_rate": null,
+        "measurement_date": null,
+        "measurement_method": null
+      }
+    ],
+    "two_qubit_gates": [
+      {
+        "gate_name": "ecr",
+        "median_error_rate": null,
+        "measurement_date": null,
+        "measurement_method": "Vendor basis-gate exposure; CX may be constructed from ECR depending on toolchain."
+      }
+    ],
+    "coherence": {
+      "median_T1_us": null,
+      "median_T2_us": null,
+      "measurement_date": null
+    },
+    "readout": {
+      "median_fidelity": null,
+      "latency_ns": null,
+      "measurement_date": null
+    },
+    "benchmarks": [
+      {
+        "benchmark_type": "clops",
+        "value": 904,
+        "circuit_depth": null,
+        "measurement_date": "2022-12-21",
+        "notes": "Publicly reported CLOPS for ibm_sherbrooke (Eagle R3)."
+      },
+      {
+        "benchmark_type": "custom",
+        "value": 0.0066,
+        "circuit_depth": null,
+        "measurement_date": "2022-12-21",
+        "notes": "Publicly reported median two-qubit error (~0.66%) for Eagle R3 generation; ensure provenance references are supplied below."
+      }
+    ],
+    "operating_constraints": {
+      "environment": "cryogenic",
+      "temperature_mK": null,
+      "cooldown_time_hours": null,
+      "recalibration_frequency": "Vendor describes a stability-focused calibration strategy; exact schedule varies."
+    },
+    "limitations": [
+      "Topology-constrained connectivity consistent with heavy-hex lattice (primarily degree 2–3).",
+      "Performance metrics are time- and calibration-dependent; cite measurement dates with any use."
+    ],
+    "provenance": {
+      "data_source": "conference_disclosure",
+      "reference": "ADD_CANONICAL_PUBLIC_REFERENCE_HERE",
+      "conflict_of_interest": "none"
+    },
+    "confidence": {
+      "confidence_score": 0.75,
+      "confidence_rationale": "Key attributes are widely published; several operational metrics remain unspecified in public sources and are left null."
+    },
+    "versioning": {
+      "object_version": "1.0.0",
+      "last_updated": "2026-01-15",
+      "change_log_url": "https://quantumhardwaredata.org/changelog/qpu/ibm_sherbrooke.json"
+    }
+  }
+}
